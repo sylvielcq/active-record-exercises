@@ -18,7 +18,6 @@ store_name = gets.chomp
 
 @new_store = Store.create(name: store_name)
 
-
 @new_store.errors.each{
   |error| puts "#{error.full_message}"
 }
